@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcmaTrello</title>
+</head>
+<body>
+    <div id="container">
+        <div id="addtask">
+            <input id="inputtask" type="text">
+            <br><br>
+            <button id="badd" type="submit">Adicionar</button>
+            <br>
+            <p id="ptask"></p>
+        </div>
+        <div id="tasks"  ondrop="drop(event)"><span class="titles">Nova</span></div>
+        <div id="process" ondrop="dropDivProcess(event)" ondragover="allowDrop(event)"><span class="titles">Fazendo</span></div>
+        <div id="final" ondrop="dropDivFinalized(event)" ondragover="allowDrop(event)"><span class="titles">Finalizado</span></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
